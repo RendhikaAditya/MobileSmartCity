@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.Tagihan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cari Tagihan"
+        android:textSize="35dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cari Tagihan Berdasar NOP"
+            android:textSize="20dp"
+            android:layout_marginBottom="-50dp"
+            android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+
+        android:orientation="horizontal">
+
+
+    <EditText
+        android:id="@+id/txt_cari"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_edittext_cari"
+        android:hint="Masukan NOP"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textColor="@color/light"
+        android:textColorHint="@color/light"/>
+    <ImageButton
+        android:id="@+id/btn_cari"
+        android:layout_marginLeft="5dp"
+        android:layout_width="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_bg_edittext_cari"
+        android:src="@drawable/ic_cari_white"
+        android:padding="15dp"
+        android:textColor="@color/light"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

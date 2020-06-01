@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ardev.tugasakhir">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".util.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true">
+        <activity android:name=".activity.ListTagihan"></activity>
+        <activity android:name=".activity.DetailTagihan" />
+        <activity android:name=".activity.Tagihan" />
+        <activity
+            android:name=".activity.Slider"
+            android:theme="@style/sliderTheme" />
+        <activity android:name=".activity.EditProfil" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".activity.HasilCari" />
+        <activity
+            android:name=".activity.BuatAduan"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".activity.DetailAduan" />
+        <activity android:name=".activity.DetailBerita" />
+        <activity android:name=".activity.LihatFoto" />
+        <activity
+            android:name=".activity.LupaSandi"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".activity.Daftar"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".activity.Login"
+            android:theme="@style/LoginTheme" />
+        <activity android:name=".activity.DetailKonten" />
+        <activity android:name=".activity.Konten" />
+        <activity android:name=".activity.SubMenu" />
+        <activity
+            android:name=".activity.Cari"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".activity.Pemberitahuan" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".activity.Splash"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

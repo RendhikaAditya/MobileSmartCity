@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.BottomSheetActivateLocation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="-10dp"
+            android:id="@+id/btn_close_bottom_sheet"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_close_grey"/>
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img_lokasi"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Aktifkan layanan lokasi di HP-mu"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Lokasimu akan terdeteksi otomatis untuk pengalaman menggunakan aplikasi yang lebih baik"/>
+        <Button
+            android:id="@+id/btn_aktifkan_lokasi"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/light"
+            android:text="Aktifkan lokasi"
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

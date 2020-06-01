@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:fillViewport="true"
+    tools:context=".activity.DetailKonten">
+
+    <RelativeLayout
+        android:clipToPadding="false"
+        android:paddingBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <ImageView
+                    android:id="@+id/image_konten_app"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/shape_gradient_caption"/>
+                <TextView
+                    android:id="@+id/tanggal_konten_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:text="tanggal"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/light"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-80dp"
+                app:srcCompat="@drawable/ic_share"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:id="@+id/title_konten_app"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JUDUL KONTENT"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/subtitle_konten_app"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBJUDUL KONTENT"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksand_regular"
+                android:textSize="16sp"/>
+            <WebView
+                android:id="@+id/konten_app"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

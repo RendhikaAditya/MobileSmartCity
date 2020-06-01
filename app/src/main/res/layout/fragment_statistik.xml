@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Statistik">
+
+    <include
+        layout="@layout/layout_akun"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/layout_koneksi"
+        android:visibility="gone" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_profil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light"
+        android:visibility="gone">
+
+        <include layout="@layout/shimmer_profil" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_statistik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="Gender"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lklk"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="Laki - laki" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmllaki"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/barl"
+                                android:text="3"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barl"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="Perempuan" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmlperempuan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/pbar"
+                                android:fontFamily="monospace"
+                                android:text="30"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/pbar"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="Agama"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="Islam" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmlislam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/baris"
+                                android:text="3"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/baris"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="Kristen" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmlkristen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/barkr"
+                                android:text="3"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barkr"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="Hindu" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmlhindu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/barhi"
+                                android:text="3"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barhi"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="Budha" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmlbudha"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/barbu"
+                                android:text="3"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barbu"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="KongHuChu" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmlkonghucu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/barko"
+                                android:text="3"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barko"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:layout_gravity="center_vertical"
+                            android:text="Khatolik" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bgbar" />
+
+                            <TextView
+                                android:id="@+id/jmlkhatolik"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/barkh"
+                                android:text="3"
+                                android:textColor="#6464F3"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barkh"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:src="@drawable/bar"
+                                app:layout_constraintWidth_percent=".85"
+                                tools:ignore="MissingConstraints" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="RT"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rt 01" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrt1"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrt1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rt 02" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrt2"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrt2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rt 03" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrt3"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrt3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rt 04" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrt4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrt4"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrt4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rt 05" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrt5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrt5"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrt5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="Rw"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rw 01" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrw1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrw1"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrw1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rw 02" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrw2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrw2"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrw2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rw 03" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrw3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrw3"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrw3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rw 04" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrw4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrw4"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrw4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Rw 05" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlrw5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/barrw5"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/barrw5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="Umur"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Dibawah 17thn" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlu1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/baru1"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/baru1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="18-25thn" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlu2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/baru2"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/baru2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="26-35thn" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlu3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/baru3"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/baru3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="36-45thn" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlu4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/baru4"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/baru4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="46-55thn" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlu5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/baru5"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/baru5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:layout_gravity="center_vertical"
+                                android:text="Diatas 55thn" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/bgbar" />
+
+                                <TextView
+                                    android:id="@+id/jmlu6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toRightOf="@+id/baru6"
+                                    android:text="3"
+                                    android:textColor="#6464F3"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/baru6"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="3dp"
+                                    android:src="@drawable/bar"
+                                    app:layout_constraintWidth_percent=".85"
+                                    tools:ignore="MissingConstraints" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

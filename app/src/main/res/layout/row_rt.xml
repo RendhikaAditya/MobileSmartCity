@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Rt 0"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="1"
+            android:textSize="15dp"
+            android:id="@+id/listrt"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bgbar" />
+
+                <TextView
+                    android:id="@+id/jmlrt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/barkh"
+                    android:text="3"
+                    android:textColor="#6464F3"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/barkh"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:padding="3dp"
+                    android:src="@drawable/bar"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progres_loadmore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:id="@+id/load_done"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/light_grey"/>
+        <TextView
+            android:id="@+id/txt_load_done"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/light_grey"
+            android:textAllCaps="true"
+            android:text="TIDAK DAPAT MEMUAT DATA"/>
+        <View
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/light_grey"/>
+    </LinearLayout>
+</LinearLayout>

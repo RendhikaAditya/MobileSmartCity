@@ -1,0 +1,145 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/beranda_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light"
+            android:clipToPadding="false"
+            android:paddingBottom="100dp"
+            android:fillViewport="true">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:layout_height="wrap_content">
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@color/light"
+                        android:backgroundTint="@color/light"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="right"
+                        app:sliderAutoCycleEnabled="true"
+                        app:sliderCircularHandlerEnabled="true"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorGravity="top|right"
+                        app:sliderIndicatorMargin="10dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="1dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="@color/light_grey"
+                        app:sliderIndicatorUnselectedColor="@color/light"
+                        app:sliderScrollTimeInSec="4"
+                        app:sliderStartAutoCycle="true" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/txt_greeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="SELAMAT MALAM ERIK"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_tagihan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="WISATA TER-HITS"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_konten"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:clipToPadding="false"
+                    android:paddingRight="20dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="SENI DAN BUDAYA"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_budaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="ACARA TAHUNAN"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_acara"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:visibility="gone"
+            android:id="@+id/shimmer_beranda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/shimmer_beranda" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <include android:visibility="gone" layout="@layout/layout_koneksi"/>
+        <include android:visibility="gone" layout="@layout/layout_kosong"/>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

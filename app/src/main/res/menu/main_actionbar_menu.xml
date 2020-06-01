@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_cari"
+        android:title="@string/title_cari"
+        android:icon="@drawable/ic_cari"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_pemberitahuan"
+        android:icon="@drawable/ic_notifikasi"
+        android:title="@string/title_pemberitahuan"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>
