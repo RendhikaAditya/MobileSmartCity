@@ -141,7 +141,7 @@ public class Konten extends BaseActivity {
                 } else if (dy > 0) { //scroll down
                     if(recyclerView.canScrollVertically(RecyclerView.FOCUS_DOWN) == false){ //reach end
                         halaman += 1;
-                        getMoreData(halaman);
+//                        getMoreData(halaman);
                         Log.d("onScrolled", "halaman: "+halaman);
                     }
                 }
@@ -289,49 +289,49 @@ public class Konten extends BaseActivity {
 //        AppController.getInstance().addToRequestQueue(requestData);
 //    }
 
-    private void getMoreData(final int page){
-        set_loadingmore();
-        JsonArrayRequest requestData = new JsonArrayRequest(Request.Method.POST, ServerApi.konten_app+"?id="+bundle.getString("id_submenu_app")+"&halaman="+page, null,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        Log.d("volley", "response : "+response.toString());
-                        if (response.length() > 0){
-                            for (int i = 0; i< response.length(); i++){
-                                try {
-                                    JSONObject data = response.getJSONObject(i);
-                                    ModelKonten md = new ModelKonten();
-                                    md.setId_konten_app(data.getString("id_konten_app"));
-                                    md.setTitle_konten_app(data.getString("title_konten_app"));
-                                    md.setSubtitle_konten_app(data.getString("subtitle_konten_app"));
-                                    md.setImage_konten_app(data.getString("image_konten_app"));
-                                    md.setKonten_app(data.getString("konten_app"));
-                                    md.setLat(data.getString("lat"));
-                                    md.setLng(data.getString("lng"));
-                                    mItems.add(md);
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                            mAdapter.notifyDataSetChanged();
-                        }else{
-                            loadmore_end();
-                            halaman -= 1;
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d("volley", "error : "+error.getMessage());
-                        if ( error instanceof TimeoutError || error instanceof NoConnectionError ||error instanceof NetworkError) {
-                            loadmore_fail();
-                        }else{
-                            loadmore_fail();
-                        }
-                        halaman -= 1;
-                    }
-                });
-        AppController.getInstance().addToRequestQueue(requestData);
-    }
+//    private void getMoreData(final int page){
+//        set_loadingmore();
+//        JsonArrayRequest requestData = new JsonArrayRequest(Request.Method.POST, ServerApi.konten_app+"?id="+bundle.getString("id_submenu_app")+"&halaman="+page, null,
+//                new Response.Listener<JSONArray>() {
+//                    @Override
+//                    public void onResponse(JSONArray response) {
+//                        Log.d("volley", "response : "+response.toString());
+//                        if (response.length() > 0){
+//                            for (int i = 0; i< response.length(); i++){
+//                                try {
+//                                    JSONObject data = response.getJSONObject(i);
+//                                    ModelKonten md = new ModelKonten();
+//                                    md.setId_konten_app(data.getString("id_konten_app"));
+//                                    md.setTitle_konten_app(data.getString("title_konten_app"));
+//                                    md.setSubtitle_konten_app(data.getString("subtitle_konten_app"));
+//                                    md.setImage_konten_app(data.getString("image_konten_app"));
+//                                    md.setKonten_app(data.getString("konten_app"));
+//                                    md.setLat(data.getString("lat"));
+//                                    md.setLng(data.getString("lng"));
+//                                    mItems.add(md);
+//                                } catch (JSONException e) {
+//                                    e.printStackTrace();
+//                                }
+//                            }
+//                            mAdapter.notifyDataSetChanged();
+//                        }else{
+//                            loadmore_end();
+//                            halaman -= 1;
+//                        }
+//                    }
+//                },
+//                new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        Log.d("volley", "error : "+error.getMessage());
+//                        if ( error instanceof TimeoutError || error instanceof NoConnectionError ||error instanceof NetworkError) {
+//                            loadmore_fail();
+//                        }else{
+//                            loadmore_fail();
+//                        }
+//                        halaman -= 1;
+//                    }
+//                });
+//        AppController.getInstance().addToRequestQueue(requestData);
+//    }
 }
