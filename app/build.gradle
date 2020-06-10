@@ -5,9 +5,9 @@ android {
     buildToolsVersion "26.0.0"
 
     defaultConfig {
-        applicationId "com.ardev.tugasakhir"
+        applicationId "com.padangsmartcity"
         minSdkVersion 22
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
