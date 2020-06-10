@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Padang Digital</string>
-    <string name="author">AR-Dev</string>
+    <string name="app_name">Padang Smart City</string>
+    <string name="author">Mediatama Web Indonesia</string>
 
     <string name="title_beranda">BERANDA</string>
     <string name="title_berita">BERITA</string>
@@ -12,14 +12,14 @@
     <string name="title_pemberitahuan">PEMBERITAHUAN</string>
 
 
-    <string name="place_name">Desa</string>
+    <string name="place_name">Padang</string>
     <string name="slogan">Smart</string>
-    <string name="app_subname">Digital</string>
-    <string name="ayo">Ayo jelajahi Kab. Pekalongan</string>
+    <string name="app_subname">City</string>
+    <string name="ayo">Ayo jelajahi Padang</string>
 
     <string name="akun">Silahkan login/daftar untuk mengakses halaman ini.</string>
     <string name="login">Login ke akun anda</string>
-    <string name="lupa_sandi">Ketikkan email anda yang terdaftar</string>
+    <string name="lupa_sandi">Ketikan email anda yang terdaftar</string>
 
     <string name="belum_punya_akun">Belum memiliki akun?</string>
     <string name="daftar">Daftar dan ayo ikut berkontribusi</string>
@@ -28,9 +28,9 @@
     <string name="kosong_komentar">Belum ada yang menanggapi nih. Yuk tanggapi postingan ini.</string>
     <string name="loading">Tunggu sebentar ya, datanya sedang dimuat.</string>
     <string name="hint_cari">Apa yang kamu cari?</string>
-    <string name="temukan">Temukan keindahan Kabupaten Pekalongan</string>
+    <string name="temukan">Temukan keindahan Padang</string>
     <string name="izin_kamera">Aktifkan perizinan <b>Penyimpanan dan Kamera</b></string>
-    <string name="tentang"><b>Desa Digital</b> adalah sebuah aplikasi yang memuat segala informasi tentang Kabupaten Pekalongan</string>
+    <string name="tentang"><b>Padang Smart City</b> adalah sebuah aplikasi yang memuat segala informasi tentang Padang</string>
 
     <array name="jk">
         <item>Laki - laki</item>
@@ -44,16 +44,16 @@
     <string name="start">MULAI</string>
 
     <string name="slide_1_title">WISATA</string>
-    <string name="slide_1_desc">Menampilkan spot-spot wisata ter-eksis di Kabupaten Pekalongan. Ayo jelajahi kkeiindahan Kabupaten Pekalongan</string>
+    <string name="slide_1_desc">Menampilkan spot-spot wisata ter-eksis di Padang. Ayo jelajahi keindahan Padang</string>
 
     <string name="slide_2_title">SENI BUDAYA</string>
-    <string name="slide_2_desc">Kabupaten Pekalongan memiliki beragam kesenian dan budaya yang menarik seperti seni tari, batik, acara kebudayaan dsb.</string>
+    <string name="slide_2_desc">Padang memiliki beragam kesenian dan budaya yang menarik seperti seni tari, batik, acara kebudayaan dsb.</string>
 
     <string name="slide_3_title">FASILITAS UMUM</string>
-    <string name="slide_3_desc">Menampilkan daftar fasilitas umum yang ada di Kabupaten Pekalongan yang berguna untuk masyarakat saat mencari atau membutuhkan informasi fasilitas umum</string>
+    <string name="slide_3_desc">Menampilkan daftar fasilitas umum yang ada di Padang yang berguna untuk masyarakat saat mencari atau membutuhkan informasi fasilitas umum</string>
 
     <string name="slide_4_title">BERITA</string>
-    <string name="slide_4_desc">Jadilah yang selalu up to date dengan membaca berita di Desa Digital</string>
+    <string name="slide_4_desc">Jadilah yang selalu up to date dengan membaca berita di Padang Smart City</string>
     <!--End Slider-->
 
     <!-- TODO: Remove or change this placeholder text -->

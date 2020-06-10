@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ardev.tugasakhir">
+    package="com.padangsmartcity">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name=".util.AppController"
+        android:name="com.padangsmartcity.util.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,13 +19,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:hardwareAccelerated="true">
-        <activity android:name=".activity.ListTagihan"></activity>
-        <activity android:name=".activity.DetailTagihan" />
-        <activity android:name=".activity.Tagihan" />
+        <activity android:name="com.padangsmartcity.activity.ListTagihan"></activity>
+        <activity android:name="com.padangsmartcity.activity.DetailTagihan" />
+        <activity android:name="com.padangsmartcity.activity.Tagihan" />
         <activity
-            android:name=".activity.Slider"
+            android:name="com.padangsmartcity.activity.Slider"
             android:theme="@style/sliderTheme" />
-        <activity android:name=".activity.EditProfil" />
+        <activity android:name="com.padangsmartcity.activity.EditProfil" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -38,33 +38,33 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name=".activity.HasilCari" />
+        <activity android:name="com.padangsmartcity.activity.HasilCari" />
         <activity
-            android:name=".activity.BuatAduan"
+            android:name="com.padangsmartcity.activity.BuatAduan"
             android:windowSoftInputMode="stateAlwaysVisible" />
-        <activity android:name=".activity.DetailAduan" />
-        <activity android:name=".activity.DetailBerita" />
-        <activity android:name=".activity.LihatFoto" />
+        <activity android:name="com.padangsmartcity.activity.DetailAduan" />
+        <activity android:name="com.padangsmartcity.activity.DetailBerita" />
+        <activity android:name="com.padangsmartcity.activity.LihatFoto" />
         <activity
-            android:name=".activity.LupaSandi"
+            android:name="com.padangsmartcity.activity.LupaSandi"
             android:theme="@style/LoginTheme" />
         <activity
-            android:name=".activity.Daftar"
+            android:name="com.padangsmartcity.activity.Daftar"
             android:theme="@style/LoginTheme" />
         <activity
-            android:name=".activity.Login"
+            android:name="com.padangsmartcity.activity.Login"
             android:theme="@style/LoginTheme" />
-        <activity android:name=".activity.DetailKonten" />
-        <activity android:name=".activity.Konten" />
-        <activity android:name=".activity.SubMenu" />
+        <activity android:name="com.padangsmartcity.activity.DetailKonten" />
+        <activity android:name="com.padangsmartcity.activity.Konten" />
+        <activity android:name="com.padangsmartcity.activity.SubMenu" />
         <activity
-            android:name=".activity.Cari"
+            android:name="com.padangsmartcity.activity.Cari"
             android:theme="@style/SplashTheme"
             android:windowSoftInputMode="adjustPan|adjustResize" />
-        <activity android:name=".activity.Pemberitahuan" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.padangsmartcity.activity.Pemberitahuan" />
+        <activity android:name="com.padangsmartcity.MainActivity" />
         <activity
-            android:name=".activity.Splash"
+            android:name="com.padangsmartcity.activity.Splash"
             android:label="@string/app_name"
             android:theme="@style/SplashTheme">
             <intent-filter>

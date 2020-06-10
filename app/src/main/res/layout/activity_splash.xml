@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Splash">
+    tools:context="com.padangsmartcity.activity.Splash">
 
     <ImageView
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         android:layout_below="@+id/place_name"
         android:textAllCaps="true"
         android:textAlignment="center"
-        android:text="@string/slogan"
+        android:text="Smart City"
         android:textStyle="bold"
         android:textColor="@color/dark_grey"
         android:textSize="14dp"/>
@@ -57,7 +57,7 @@
            android:layout_height="wrap_content"
            android:textAllCaps="true"
            android:textAlignment="center"
-           android:text="@string/app_subname"
+           android:text="@string/place_name"
            android:textStyle="bold"
            android:textColor="@color/light"
            android:textSize="20dp"/>

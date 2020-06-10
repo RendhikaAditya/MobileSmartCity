@@ -8,7 +8,7 @@
     android:fillViewport="true"
     android:clipToPadding="false"
     android:paddingBottom="100dp"
-    tools:context=".activity.Login">
+    tools:context="com.padangsmartcity.activity.Login">
 
     <LinearLayout
         android:layout_width="match_parent"

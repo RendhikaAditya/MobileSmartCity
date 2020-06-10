@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/swipetagih"
-    tools:context=".activity.ListTagihan">
+    tools:context="com.padangsmartcity.activity.ListTagihan">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

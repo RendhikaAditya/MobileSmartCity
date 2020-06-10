@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light"
-    tools:context=".activity.LihatFoto">
+    tools:context="com.padangsmartcity.activity.LihatFoto">
     <com.jsibbold.zoomage.ZoomageView
         android:id="@+id/image"
         app:zoomage_doubleTapToZoom="true"

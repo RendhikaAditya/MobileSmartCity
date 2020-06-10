@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:orientation="vertical"
-        tools:context=".activity.EditProfil">
+        tools:context="com.padangsmartcity.activity.EditProfil">
 
         <RelativeLayout
             android:layout_width="wrap_content"

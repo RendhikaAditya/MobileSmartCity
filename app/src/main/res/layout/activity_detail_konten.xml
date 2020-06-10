@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/light"
     android:fillViewport="true"
-    tools:context=".activity.DetailKonten">
+    tools:context="com.padangsmartcity.activity.DetailKonten">
 
    <RelativeLayout
        android:clipToPadding="false"
